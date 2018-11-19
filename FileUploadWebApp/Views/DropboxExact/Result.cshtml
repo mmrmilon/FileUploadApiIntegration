@@ -1,0 +1,11 @@
+﻿@model FileUploadWebApp.Models.ResultViewModel
+@{
+    ViewBag.Title = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <h3>@Model.ResultText</h3>
+    @Html.ActionLink(Model.ButtonText, "Index", null, new { @class = "btn " + (Model.Success ? "btn-success" : "btn-warning") })
+</div>
+

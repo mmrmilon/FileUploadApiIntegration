@@ -1,0 +1,5 @@
+D:\MILON\FileUploadApiIntegration\ApiIntegration.Core\bin\Debug\ApiIntegration.Core.dll
+D:\MILON\FileUploadApiIntegration\ApiIntegration.Core\bin\Debug\ApiIntegration.Core.pdb
+D:\MILON\FileUploadApiIntegration\ApiIntegration.Core\obj\Debug\ApiIntegration.Core.csproj.CoreCompileInputs.cache
+D:\MILON\FileUploadApiIntegration\ApiIntegration.Core\obj\Debug\ApiIntegration.Core.dll
+D:\MILON\FileUploadApiIntegration\ApiIntegration.Core\obj\Debug\ApiIntegration.Core.pdb

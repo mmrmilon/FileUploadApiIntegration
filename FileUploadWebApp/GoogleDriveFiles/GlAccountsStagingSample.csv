@@ -1,0 +1,95 @@
+GLCode,Level_1,Level_2,Level_3,Level_4,Level_5,Module
+101020201,,,,,CD Account-Shajalal Bank Ltd.,"Loan Entry, Sales, Other sales, Voucher, Other payments, Payroll"
+101020202,,,,,Current Deposit-UCBL,"Loan Entry, Sales, Other sales, Voucher, Other payments, Payroll"
+101020203,,,,,Current Deposit-BBL,"Loan Entry, Sales, Other sales, Voucher, Other payments, Payroll"
+101020301,,,,,Saving-Prime,"Loan Entry, Sales,Other sales, Voucher, Other payments, Payroll"
+101020302,,,,,Saving-UCBL,"Loan Entry, Sales,Other sales, Voucher, Other payments, Payroll"
+101020303,,,,,Saving-BBL,"Loan Entry, Sales,Other sales, Voucher, Other payments, Payroll"
+101060101,,,,,Advance Salary-Non Management Staff- Production,Payroll
+101060102,,,,,Advance Salary-Management Staff- Production,Payroll
+101060103,,,,,Advance Salary-Non Management Staff- Sales & Admin,Payroll
+101060104,,,,,Advance Salary-Management Staff- Sales & Admin,Payroll
+103010101,,,,,Loans against Salary,Payroll
+201010301,,,,,AIT deducted at source payable-Salary,"Single Entry, Payroll"
+201030101,,,,,CC-Shajalal Bank Limited,"Loan Installment Entry, Loan Entry"
+201030102,,,,,CC-BBL,"Loan Installment Entry, Loan Entry"
+201030103,,,,,CC-NBL,"Loan Installment Entry, Loan Entry"
+201030201,,,,,OD-Shajalal Bank Limited,"Loan Installment Entry, Loan Entry"
+201030202,,,,,OD-BBL,"Loan Installment Entry, Loan Entry"
+201030203,,,,FDBP Credit,OD-NBL,"Loan Installment Entry, Loan Entry"
+201030301,,,,,PC-Shajalal Bank Limited,"Loan Installment Entry, Sales, Loan Entry"
+201030302,,,,,PC-BBL,"Loan Installment Entry, Sales, Loan Entry"
+201030303,,,,,PC-NBL,"Loan Installment Entry, Sales, Loan Entry"
+201030401,,,,,FDBP-Shajalal Bank Limited,"Loan Installment Entry, Sales, Loan Entry"
+201030402,,,,,FDBP-BBL,"Loan Installment Entry, Sales, Loan Entry"
+201030501,,,,,LDBP-Shajalal Bank Ltd.,"Loan Installment Entry, Sales, Loan Entry"
+201030502,,,,,LDBP-BBL,"Loan Installment Entry, Sales, Loan Entry"
+201030601,,,,,EDF-Shajalal Bank Limited,"Loan Installment Entry, Sales, Loan Entry"
+201030602,,,,,EDF-BBL,"Loan Installment Entry, Sales, Loan Entry"
+202010101,,,,,Higher Purchase-Shajalal Bank Ltd.,"Loan Installment Entry, Loan Entry"
+202010102,,,,,Car Loan,"Loan Installment Entry, Loan Entry"
+202010103,,,,,LTL-NBL,"Loan Installment Entry, Loan Entry"
+202020101,,,,,Payable Provident Fund,Payroll
+202020102,,,,,Payable Insurance,Payroll
+202020103,,,,,Payable Welfare Fund,Payroll
+202020104,,,,,Payable Provident Fund Interest,Payroll
+202020105,,,,,Payable Welfare Fund Interest,Payroll
+202020201,,,,,Payable Net Salary-Non Management Staff-Production,Payroll
+202020202,,,,,Payable Net Salary-Management Staff-Production,Payroll
+202020203,,,,,Payable Net Salary-Non Management Staff-Sales & Admin,Payroll
+202020204,,,,,Payable Net Salary-Management Staff-Sales & Admin,Payroll
+202020205,,,,,Payable Net Salary-Managing Director,Payroll
+202020206,,,,,Payable Net salary-AWLI-Resign,Payroll
+401040101,,,,,Basic Salary of Management Staff-Production,Payroll
+401040102,,,,,Basic Salary of Non Management staff-Production,Payroll
+401040201,,,,,House Rent of Management Staff-Production,Payroll
+401040202,,,,,House Rent of Non Management Staff-Production,Payroll
+401040301,,,,,Conveyance of Management Staff-Production,Payroll
+401040302,,,,,Conveyance of Non Management Staff-Production,Payroll
+401040401,,,,,Medical Allowance of Management Staff-Production,Payroll
+401040402,,,,,Medical Allowance of Non Management Staff-Production,Payroll
+401040501,,,,,Food Allowance of Management Staff-Production,Payroll
+401040502,,,,,Food Allowance of Non Management Staff-Production,Payroll
+401040601,,,,,Car allowance-Production,Payroll
+401040602,,,,,House Maintenance-Production ,Payroll
+401040603,,,,,Personal Pay-Production,Payroll
+401040604,,,,,Others-Production,Payroll
+401040701,,,,,Festival Bonus-Production,Payroll
+401040702,,,,,Incentive Bonus-Production,Payroll
+401040703,,,,,Attendance Bonus-Production,Payroll
+401040801,,,,,Provident Fund-Production,Payroll
+401040802,,,,,Welfare Fund-Production,Payroll
+401040803,,,,,Insurance-Production,Payroll
+401040901,,,,,Non Management Staff Overtime-Production,Payroll
+401040902,,,,,Management Staff Overtime- Production,Payroll
+401041001,,,,,Basic Pay Roll-MD,Payroll
+401041002,,,,,House Rent-MD,Payroll
+401041003,,,,,House Maintenance-MD,Payroll
+401041004,,,,,Conveyance-MD,Payroll
+401041005,,,,,Medical Allowance-MD,Payroll
+401041006,,,,,Car Allowance-MD,Payroll
+401041007,,,,,Incentive Bonus-MD,Payroll
+401041008,,,,,Festival Bonus-MD,Payroll
+401041009,,,,,Others-MD,Payroll
+402010101,,,,,Basic Salary of Management Staff-Sales & Admin,Payroll
+402010102,,,,,Basic Salary of Non Management staff-Sales & Admin,Payroll
+402010201,,,,,House Rent of Management Staff-Sales & Admin,Payroll
+402010202,,,,,House Rent of Non Management Staff-Sales & Admin,Payroll
+402010301,,,,,Conveyance of Management Staff-Sales & Admin,Payroll
+402010302,,,,,Conveyance of Non Management Staff-Sales & Admin,Payroll
+402010401,,,,,Medical Allowance of Management Staff-Sales & Admin,Payroll
+402010402,,,,,Medical Allowance of Non Management Staff-Sales & Admin,Payroll
+402010501,,,,,Food Allowance of Management Staff-Sales & Admin,Payroll
+402010502,,,,,Food Allowance of Non Management Staff-Sales & Admin,Payroll
+402010601,,,,,Car allowance-Sales & Admin,Payroll
+402010602,,,,,House Maintenance-Sales & Admin,Payroll
+402010603,,,,,Personal Pay-Sales & Admin,Payroll
+402010604,,,,,Others-Sales & Admin,Payroll
+402010701,,,,,Festival Bonus-Sales & Admin,Payroll
+402010702,,,,,Incentive Bonus-Sales & Admin,Payroll
+402010703,,,,,Attendance Bonus-Sales & Admin,Payroll
+402010801,,,,,Provident Fund-Sales & Admin,Payroll
+402010802,,,,,Welfare Fund-Sales & Admin,Payroll
+402010803,,,,,Insurance-Sales & Admin,Payroll
+402010901,,,,,Non Management Staff Overtime-Sales & Admin,Payroll
+402010902,,,,,Management Staff Overtime-Sales & Admin,Payroll

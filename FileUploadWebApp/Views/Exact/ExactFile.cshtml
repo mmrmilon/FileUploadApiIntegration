@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ExactOnline.Client.Models.Document>
+
+@{
+    ViewBag.Title = "ExactFile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-muted">Exact Document List</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th class="text-center">
+            Subject
+        </th>
+        <th class="text-center">
+            Creator
+        </th>
+        <th class="text-center">
+            Type
+        </th>
+        <th class="text-center">
+            Document Url
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.CreatorFullName)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.TypeDescription)
+            </td>
+            <td class="text-center">
+                <a href="@item.DocumentViewUrl" target="_blank">@item.Body</a>
+            </td>
+        </tr>
+    }
+
+</table>

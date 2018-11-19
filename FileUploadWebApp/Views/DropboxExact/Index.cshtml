@@ -1,0 +1,77 @@
+﻿@model FileUploadWebApp.Models.ViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-muted">Dropbox to Exact</h2><hr />
+
+@if (Model.DropboxIsAuthenticated && Model.ExactIsAuthenticated)
+{
+    using (Html.BeginForm())
+    {
+        <div class="row copy-contents">
+            @Html.HiddenFor(m => m.SelectedFile)
+            <div class="col-md-12 col-sm-12">
+                <label>Pick the file you want to copy from the tree below</label>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                @Html.ValidationMessageFor(m => m.SelectedFile)
+            </div>
+            <div class="col-md-12 col-sm-12" id="treeview">
+                <ul>
+                    @Html.DisplayFor(m => m.UploadedFiles)
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12 col-sm-12 form-group">
+                <label>What should de title of the document be?</label>
+                @Html.EditorFor(m => m.Title, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Title)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 form-group">
+                <input type="submit" value="Copy file" class="btn btn-success" />
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="row">
+        @if (!Model.DropboxIsAuthenticated)
+        {
+            using (Html.BeginForm("Authenticate", "Dropbox"))
+            {
+                <div class="col-md-12">
+                    <input type="submit" value="Login to dropbox" class="btn btn-primary" />
+                </div>
+            }
+        }
+        @if (!Model.ExactIsAuthenticated)
+        {
+            using (Html.BeginForm("Authenticate", "Exact"))
+            {
+                <div class="col-md-12">
+                    <input type="submit" value="Login to exact" class="btn btn-danger" />
+                </div>
+            }
+        }
+    </div>
+}
+
+@section scripts {
+    <script>
+        $(function ()
+        {
+            $("#treeview").jstree();
+            $("#treeview").on("changed.jstree", function (e, data) {
+                $("#@(Html.IdFor(m => m.SelectedFile))").val($("#" + data.selected).attr("data-path"));
+            });
+        });
+    </script>
+}
+

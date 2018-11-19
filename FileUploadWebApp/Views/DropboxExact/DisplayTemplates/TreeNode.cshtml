@@ -1,0 +1,11 @@
+﻿@model ApiIntegration.Core.Models.TreeNode
+<li data-jstree='{"icon":"glyphicon @(Model.HasChildren ? "glyphicon-folder-open" : "glyphicon-file")","disabled":@(Model.HasChildren?"true":"false")}'
+    data-path="@Model.Path">
+    @Model.Name
+    @if (Model.HasChildren)
+    {
+        <ul>
+            @Html.DisplayFor(m => m.Children)
+        </ul>
+    }
+</li>

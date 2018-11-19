@@ -1,0 +1,56 @@
+﻿@model FileUploadWebApp.Models.ViewModel
+@{
+    ViewBag.Title = "DropboxFile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2 class="text-muted">Dropbox Files</h2><hr />
+
+<div class="row">
+    @using (Html.BeginForm("DropboxFile", "Dropbox", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="col-lg-12 col-md-12">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <b>Upload File</b>
+                </div>
+                <div class="col-sm-3">
+                    <input type="file" class="custom-file-input" id="file" name="file">
+                </div>
+                <div class="col-sm-7 text-left">
+                    <input type="submit" value="Upload" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<hr />
+
+<div class="row">
+    @Html.HiddenFor(m => m.SelectedFile)
+    <div class="col-md-12 col-sm-12">
+        <label>Dropbox File Tree View</label>
+    </div>
+    <div class="col-md-12 col-sm-12">
+        @Html.ValidationMessageFor(m => m.SelectedFile)
+    </div>
+    <div class="col-md-12 col-sm-12" id="treeview">
+        <ul>
+            @Html.DisplayFor(m => m.UploadedFiles)
+        </ul>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(function ()
+        {
+            $("#treeview").jstree();
+            $("#treeview").on("changed.jstree", function (e, data) {
+                $("#@(Html.IdFor(m => m.SelectedFile))").val($("#" + data.selected).attr("data-path"));
+            });
+        });
+    </script>
+}
+
