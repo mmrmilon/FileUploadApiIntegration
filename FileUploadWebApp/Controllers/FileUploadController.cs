@@ -1,4 +1,5 @@
 ﻿using ApiIntegration.Infrastructure.Repositories;
+using FileUploadWebApp.Models;
 using FileUploadWebApp.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,17 +11,33 @@ namespace FileUploadWebApp.Controllers
 {
     public class FileUploadController : Controller
     {
+        //https://console.developers.google.com/apis/dashboard?project=aspdotnetcsharp-221915&duration=PT1H
         //public IGoogleDriveApiConnection googleDriveApiConnection;
 
         //public FileUploadController(IGoogleDriveApiConnection googleDriveApiConnection)
         //{
         //    this.googleDriveApiConnection = googleDriveApiConnection;
         //}
+
         // GET: FileUpload
         public ActionResult Upload()
         {
-            return View(GoogleDriveFilesRepository.GetDriveFiles());
-            //return View(googleDriveApiConnection.GetDriveFiles());
+            List<GoogleDriveFiles> result = null;
+            try
+            {
+                result = GoogleDriveFilesRepository.GetDriveFiles();
+                
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("GoogleDriveConnectionError");
+            }
+            return View(result);
+        }
+
+        public ActionResult GoogleDriveConnectionError()
+        {
+            return View();
         }
 
         [HttpPost]

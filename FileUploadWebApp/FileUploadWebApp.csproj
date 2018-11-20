@@ -206,10 +206,16 @@
     <Compile Include="Repositories\GoogleDriveFilesRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ApiIntegration.Infrastructure.DropboxDbContext.mdf" />
+    <Content Include="App_Data\ApiIntegration.Infrastructure.DropboxDbContext_log.ldf">
+      <DependentUpon>ApiIntegration.Infrastructure.DropboxDbContext.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\client_secret.png" />
+    <Content Include="Content\images\googledriveapiconnection.png" />
     <Content Include="Content\jsTree\docs.css" />
     <Content Include="Content\jsTree\themes\default-dark\32px.png" />
     <Content Include="Content\jsTree\themes\default-dark\40px.png" />
@@ -269,9 +275,9 @@
     <Content Include="Views\Dropbox\DropboxFile.cshtml" />
     <Content Include="Views\Dropbox\DisplayTemplates\TreeNode.cshtml" />
     <Content Include="Views\GoogleDriveExact\Index.cshtml" />
+    <Content Include="Views\FileUpload\GoogleDriveConnectionError.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="GoogleDriveFiles\" />
   </ItemGroup>
   <ItemGroup>

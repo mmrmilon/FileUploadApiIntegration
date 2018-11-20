@@ -22,10 +22,11 @@ namespace FileUploadWebApp.Repositories
         {
             //get Credentials from client_secret.json file 
             UserCredential credential;
-            using (var stream = new FileStream(@"D:\MILON\client_secret.json", FileMode.Open, FileAccess.Read))
+            string path = HttpContext.Current.Server.MapPath("~/App_Data/client_secret.json");
+            using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
-                String FolderPath = @"D:\MILON\";
-                String FilePath = Path.Combine(FolderPath, "DriveServiceCredentials.json");
+                string folderPath = HttpContext.Current.Server.MapPath("~/App_Data/");
+                string FilePath = Path.Combine(folderPath, "DriveServiceCredentials.json");
 
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
@@ -52,8 +53,8 @@ namespace FileUploadWebApp.Repositories
             // define parameters of request.
             FilesResource.ListRequest FileListRequest = service.Files.List();
 
-            //listRequest.PageSize = 10;
-            //listRequest.PageToken = 10;
+            //FileListRequest.PageSize = 10;
+            //FileListRequest.PageToken = 10;
             //FileListRequest.Q = "mimeType = 'application/vnd.google-apps.folder' and name = 'IELTS'"; // specify the folder name
             FileListRequest.Fields = "nextPageToken, files(id, name, size, version, createdTime)";
             //get file list.
